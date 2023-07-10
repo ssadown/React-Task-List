@@ -1,0 +1,116 @@
+header {
+    width: 100%;
+    height: 8vh;
+    font-size: 2vh;
+    color: white;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ready {
+    text-decoration: line-through;
+    color: greenyellow;
+    transition-duration: 0.4s;
+}
+.task-list {
+    width: 100%;
+    height: 100%;
+    background-color: #444;
+    color: white;
+}
+#root {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.task-form-block {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.task-form-block h3{
+    font-size: 3vh;
+}
+.task-form-block form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.task-form-block input{
+    width: 40vw;
+    height: 5vh;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    margin: 20px;
+    transition-duration: 0.4s;
+}
+.task-form-block button {
+    width: 40vw;
+    height: 10vh;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    margin: 20px;
+    transition-duration: 0.4s;
+}
+.task-form-block input:hover {
+    width: 53%;
+    border-radius: 4px;
+    background-color: #555;
+}
+.task-form-block button:hover {
+    width: 53%;
+    border-radius: 4px;
+    background-color: #555;
+}
+.task {
+    height: unset;
+    width: 100%;
+    padding-left: 25px;
+    animation: task-being 1s linear;
+}
+.task h1 {
+    font-size: 3.5vh;
+}
+.task-id {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.task-check {
+    height: 2vh;
+    width: 2vh;
+    margin-right: 8px;
+}
+.delete-icon {
+    height: 3vh;
+    width: 3vh;
+    margin-left: 10px;
+}
+.delete-icon-ready {
+    height: 3vh;
+    width: 3vh;
+    margin-left: 10px;
+    color: greenyellow;
+    transition-duration: 0.4s;
+}
+.all-task-ready {
+    margin-left: 25px;
+}
+@keyframes task-being {
+    from {
+        transform: translateX(-100%);
+    } to {
+        transform: translateX(0%);
+    }
+}
